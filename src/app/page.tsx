@@ -1,5 +1,6 @@
 import Button from "@/components/common/Button";
 import SectionTittle from "@/components/common/SectionTittle";
+import Card from "@/components/common/Card";
 import Image from "next/image";
 import React from "react";
 
