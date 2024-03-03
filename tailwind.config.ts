@@ -16,6 +16,9 @@ const config: Config = {
         vaiolet: "#6366F1",
         blue: "#38BDF8",
       },
+      backgroundImage: {
+        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
+      },
     },
   },
   plugins: [],
