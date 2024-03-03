@@ -1,3 +1,4 @@
+import Card from "@/components/common/Card";
 import Image from "next/image";
 import React from "react";
 
