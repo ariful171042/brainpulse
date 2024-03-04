@@ -21,7 +21,7 @@ const data = [
     ans: "I had going to cox",
     rightAns: {
       a: "I had going to cox",
-      b: "Now I am Reading a book",
+      b: "I had going to cox",
       c: "I will going to Dhaka",
       d: "I have a Car",
     },

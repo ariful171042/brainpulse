@@ -5,7 +5,7 @@ const SubTitle = ({ title }: { title: string }) => {
     <div>
       <div className=" border-white rounded-full p-3">
         <p className="text-xl tracking-widest font-bold text-white/90">
-          WE HAVE ONE GOAL
+          {title}
         </p>
       </div>
     </div>
