@@ -86,7 +86,8 @@ const TenseCheck = () => {
                       onClick={() =>
                         checkAns(data[currentIndex].ans, value, index)
                       }
-                      className={`border ${backgrounds[index]} border-se rounded-lg py-5 px-5 flex gap-3 items-center`}>
+                      className={`border ${backgrounds[index]} border-se rounded-lg py-5 px-5 flex gap-3 items-center`}
+                    >
                       <div className="w-[15px] h-[12px] border"></div>
                       <h3 className="text-xl text-white/80">{value}</h3>
                     </div>

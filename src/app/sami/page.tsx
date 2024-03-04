@@ -1,6 +1,9 @@
 import Card from "@/components/common/Card";
+import GradientTitle from "@/components/common/GradientTitle";
+import Prompt from "@/components/common/Prompt";
 import SectionTittle from "@/components/common/SectionTittle";
 import SubTitle from "@/components/common/SubTitle";
+import Table from "@/components/common/Table";
 import React from "react";
 
 const page = () => {
@@ -34,6 +37,9 @@ const page = () => {
           />
         </div>
       </div>
+      <GradientTitle title={"How we compare"} />
+      <Table />
+      <Prompt />
     </section>
   );
 };
