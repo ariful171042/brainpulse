@@ -17,7 +17,7 @@ const Card = ({ image, title, description, height, width }: cardProp) => {
           src={image || "/assets/img/temp.svg"}
           height={height}
           width={width}
-          alt="cardImage"
+          alt={title}
         />
         <div className=" text-white/70 text-left flex flex-col gap-3">
           <h3 className="text-2xl text-white md:text-xl">{title}</h3>
