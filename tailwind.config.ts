@@ -15,6 +15,7 @@ const config: Config = {
         white: "#FFFFFF",
         vaiolet: "#6366F1",
         blue: "#38BDF8",
+        slatee: "#3E4E59",
       },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
