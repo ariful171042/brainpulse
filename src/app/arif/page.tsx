@@ -1,6 +1,7 @@
 import Button from "@/components/common/Button";
 import DifferentTitle from "@/components/common/DifferentTitle";
 import SectionTittle from "@/components/common/SectionTittle";
+import BgTopDown from "@/components/ui/BgTopDown";
 import React from "react";
 
 const Arif = () => {
@@ -15,10 +16,14 @@ const Arif = () => {
       </div> */}
 
       <div className="w-52 h-52  bg-gradient-radial from-gray-100/10 border border-se rounded-lg to-transparent">
-        <div className="mix-blend-multiply bg-some-svg"></div>
+        <div className="">
+          <h3 className="text-2xl">30</h3>
+        </div>
       </div>
 
-     .
+      <BgTopDown>
+        <SectionTittle tittle="Hello" />
+      </BgTopDown>
     </div>
   );
 };
