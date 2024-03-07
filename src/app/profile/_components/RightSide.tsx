@@ -1,3 +1,4 @@
+import RankTable from "@/components/common/Table";
 import RedialGridient from "@/components/ui/RedialGridient";
 import React from "react";
 
@@ -30,7 +31,9 @@ const RightSide = () => {
           </div>
         </RedialGridient>
       </div>
-      
+      <div className="pt-5">
+      <RankTable />
+      </div>
     </section>
   );
 };
