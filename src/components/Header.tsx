@@ -9,11 +9,11 @@ const Header = () => {
           <p className="text-white text-2xl">Logo</p>
         </Link>
         <div className="flex lg:gap-20 md:gap-10 gap-5 font-medium tracking-widest lg:text-lg">
-          <Link href="/test" className="nav-link">
-            Test
+          <Link href="/" className="nav-link">
+            Home
           </Link>
-          <Link href="/profile" className="nav-link">
-            Porfile
+          <Link href="/quize" className="nav-link">
+            Quiz
           </Link>
           <Link href="/contact" className="nav-link">
             Contact
