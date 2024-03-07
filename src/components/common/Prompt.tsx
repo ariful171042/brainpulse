@@ -25,8 +25,8 @@ const Prompt = () => {
               <Image
                 src="/assets/img/section-bg.svg"
                 alt="Prompt"
-                height={400}
-                width={1000}
+                height={480}
+                width={1080}
               />
             </div>
           </div>

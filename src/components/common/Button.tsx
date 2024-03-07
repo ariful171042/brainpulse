@@ -53,7 +53,8 @@ const Button: React.FC<ButtonProps> = ({
       className={cn(
         buttonVariants({ variant, size }),
         isLoading && "flex items-center justify-center gap-2.5"
-      )}>
+      )}
+    >
       {isLoading && <Loader2 size={20} className="animate-spin" />}
       {children}
     </button>
