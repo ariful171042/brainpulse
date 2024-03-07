@@ -4,7 +4,7 @@ const SubTitle = ({ title }: { title: string }) => {
   return (
     <div>
       <div className=" border-white rounded-full p-3">
-        <p className="text-xl tracking-widest font-bold text-white/90">
+        <p className="text-xl tracking-wider font-normal text-white/90">
           {title}
         </p>
       </div>

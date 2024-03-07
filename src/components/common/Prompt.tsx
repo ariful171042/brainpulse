@@ -6,30 +6,13 @@ import DifferentTitle from "./DifferentTitle";
 
 const Prompt = () => {
   return (
-    <div className="relative flex justify-center items-center mb-32">
-      <div className="w-[80%]">
-        <div className="relative">
-          <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-10">
-            <div className="flex flex-col gap-3 justify-center items-center">
-              <div>
-                <GradientTitle title="Get Ready To Gain Knowledge" />
-              </div>
-              <div>
-                <Button variant={"primary"}>SignUp</Button>
-              </div>
-            </div>
-          </div>
-
-          <div className="flex justify-center">
-            <div className="flex items-center relative">
-              <Image
-                src="/assets/img/section-bg.svg"
-                alt="Prompt"
-                height={480}
-                width={1080}
-              />
-            </div>
-          </div>
+    <div className="wrapper bg-promt w-full h-full object-fill rounded-xl py-24 bg-repeat bg-cover bg-w-full">
+      <div className="flex flex-col gap-3 justify-center items-center">
+        <div>
+          <GradientTitle title="Get Ready To Gain Knowledge" />
+        </div>
+        <div>
+          <Button variant={"primary"}>SignUp</Button>
         </div>
       </div>
     </div>

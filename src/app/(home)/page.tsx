@@ -32,7 +32,7 @@ const HomePage = () => {
               <SubTitle title="Focus on pushing code that doesn't break your codebase. Kodezi Cloud finds issues in your code before every push" />
             </div>
 
-            <div className="flex w-[80%] lg:w-[70%] flex-col lg:flex-row mx-auto gap-10">
+            <div className="flex w-[80%] lg:w-[60%] flex-col lg:flex-row mx-auto gap-10">
               <BgTopDown>
                 <Image
                   src={

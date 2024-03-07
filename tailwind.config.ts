@@ -19,6 +19,8 @@ const config: Config = {
       },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
+        "promt": "url('/assets/img/section-bg.svg')",
+        
       },
     },
   },
