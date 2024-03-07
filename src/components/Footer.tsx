@@ -2,13 +2,13 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <footer className="bg-gray-900 text-white/80 tracking-wider py-8">
-      <div className="wrapper flex  gap-8 md:flex-row  justify-between">
+    <footer className="bg-gray-900 text-white/80 tracking-wider py-24">
+      <div className="wrapper flex flex-col  gap-8 md:flex-row justify-between ">
         <div className="sm:pl-2">
           <p>Logo</p>
         </div>
 
-        <div className=" flex gap-20 text-xs">
+        <div className="grid grid-cols-2 md:flex flex-col md:flex-row gap-3 md:gap-20 text-xs ">
           <div className="w-full sm:w-1/2 md:w-1/4 lg:w-1/5 mb-4">
             <h3 className="text-lg font-semibold mb-2">Students</h3>
             <ul className="flex flex-col gap-2 text-white/50">

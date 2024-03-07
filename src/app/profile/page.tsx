@@ -1,9 +1,3 @@
-import Button from "@/components/common/Button";
-import SectionTittle from "@/components/common/SectionTittle";
-import BgTopDown from "@/components/ui/BgTopDown";
-import Image from "next/image";
-import React from "react";
-import { FaElementor, FaStar } from "react-icons/fa";
 import LeftSide from "./_components/LeftSide";
 import RightSide from "./_components/RightSide";
 
