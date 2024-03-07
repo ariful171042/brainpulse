@@ -10,6 +10,8 @@ import { cn } from "@/lib/utils";
 import DifferentTitle from "@/components/common/DifferentTitle";
 import RankTable from "@/components/common/Table";
 import Prompt from "@/components/common/Prompt";
+import BgTopDown from "@/components/ui/BgTopDown";
+import Image from "next/image";
 
 const HomePage = () => {
   return (
@@ -30,21 +32,47 @@ const HomePage = () => {
               <SubTitle title="Focus on pushing code that doesn't break your codebase. Kodezi Cloud finds issues in your code before every push" />
             </div>
 
-            <div className="flex w-[50%] mx-auto gap-10">
-              <Card
-                image="https://kodezi.com/_next/static/media/automated-code-review-v1.23a162a1.svg"
-                title="Automated Code Review"
-                width={500}
-                height={500}
-                description="Elevate your code quality using Kodezi's automated code review. Reduce manual effort, streamline your review process and amplify productivity."
-              />
-              <Card
-                image="https://kodezi.com/_next/static/media/automated-code-review-v1.23a162a1.svg"
-                title="Automated Code Review"
-                width={500}
-                height={500}
-                description="Elevate your code quality using Kodezi's automated code review. Reduce manual effort, streamline your review process and amplify productivity."
-              />
+            <div className="flex w-[80%] lg:w-[70%] flex-col lg:flex-row mx-auto gap-10">
+              <BgTopDown>
+                <Image
+                  src={
+                    "https://kodezi.com/_next/static/media/automated-code-review-v1.23a162a1.svg"
+                  }
+                  height={500}
+                  width={500}
+                  alt={"Automated Code Review"}
+                />
+                <div className=" text-white/70 text-left flex flex-col gap-3">
+                  <h3 className="text-2xl text-white md:text-xl">
+                    {"Automated Code Review"}
+                  </h3>
+                  <p className="text-lg md:text-sm">
+                    {
+                      "Elevate your code quality using Kodezis automated code review. Reduce manual effort, streamline your review process and amplify productivity."
+                    }
+                  </p>
+                </div>
+              </BgTopDown>
+              <BgTopDown>
+                <Image
+                  src={
+                    "https://kodezi.com/_next/static/media/automated-code-review-v1.23a162a1.svg"
+                  }
+                  height={500}
+                  width={500}
+                  alt={"Automated Code Review"}
+                />
+                <div className=" text-white/70 text-left flex flex-col gap-3">
+                  <h3 className="text-2xl text-white md:text-xl">
+                    {"Automated Code Review"}
+                  </h3>
+                  <p className="text-lg md:text-sm">
+                    {
+                      "Elevate your code quality using Kodezis automated code review. Reduce manual effort, streamline your review process and amplify productivity."
+                    }
+                  </p>
+                </div>
+              </BgTopDown>
             </div>
           </div>
         </section>
