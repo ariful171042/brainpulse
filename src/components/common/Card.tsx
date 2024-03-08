@@ -11,7 +11,7 @@ type cardProp = {
 
 const Card = ({ image, title, description, height, width }: cardProp) => {
   return (
-    <div className=" bg-black p-[2px] rounded-3xl bg-gradient-to-b from-pink-400 via-purple-500 to-vaiolet">
+    <div className=" bg-black p-[2px] rounded-3xl bg-gradient-to-b from-pink-500 via-purple-500 to-vaiolet">
       <div className="flex flex-col gap-20 p-10 rounded-[calc(1.5rem-1px)] items-center bg-gradient-to-r from-slate-800 to-slate-700">
         <Image
           src={image || "/assets/img/temp.svg"}

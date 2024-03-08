@@ -14,15 +14,15 @@ const RankTable = () => {
     <div className="w-full flex justify-center">
       <div className="container">
         <table className="min-w-full divide-y divide-pr rounded-lg overflow-hidden">
-          <thead className="text-xs lg:text-xl bg-slatee text-white/80">
-            <tr className="">
-              <th className="px-6 py-3 text-center font-medium  uppercase tracking-wider ">
+          <thead className="text-xs md:text-xl bg-slatee text-white/80">
+            <tr>
+              <th className="px-6 py-4 text-center font-medium  uppercase tracking-wider ">
                 Username
               </th>
-              <th className="px-6 py-3 text-center  font-medium  uppercase tracking-wider">
+              <th className="px-6 py-4 text-center  font-medium  uppercase tracking-wider">
                 Scores
               </th>
-              <th className="px-6 py-3 text-center  font-medium  uppercase tracking-wider">
+              <th className="px-6 py-4 text-center  font-medium  uppercase tracking-wider">
                 Tests Taken
               </th>
             </tr>

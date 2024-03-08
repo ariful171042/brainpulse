@@ -20,6 +20,9 @@ const Header = () => {
           <Link href="/contact" className="nav-link">
             Contact
           </Link>
+          <Link href="/profile" className="nav-link">
+            Profile
+          </Link>
         </div>
         <div>
           <button className={cn(buttonVariants())}>Login</button>
