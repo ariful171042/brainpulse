@@ -9,10 +9,12 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "addinputs": "^1.0.0",
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.1.0",
     "framer-motion": "^11.0.8",
     "lucide-react": "^0.344.0",
+    "mongoose": "^8.2.1",
     "next": "14.1.0",
     "next-scroll-to": "^1.0.8",
     "react": "^18",

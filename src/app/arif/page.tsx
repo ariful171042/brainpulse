@@ -1,9 +1,10 @@
+"use client"
 import Button from "@/components/common/Button";
 import DifferentTitle from "@/components/common/DifferentTitle";
 import SectionTittle from "@/components/common/SectionTittle";
 import BgTopDown from "@/components/ui/BgTopDown";
+import { AddInput } from "addinputs";
 import React from "react";
-
 const Arif = () => {
   return (
     <div className="wrapper sp bg-pr h-screen w-screen">
@@ -24,6 +25,8 @@ const Arif = () => {
       <BgTopDown>
         <SectionTittle tittle="Hello" />
       </BgTopDown>
+
+      {<AddInput label="Name" btnName="Add" type="text" />}
     </div>
   );
 };
