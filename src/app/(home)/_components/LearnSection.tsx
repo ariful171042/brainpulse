@@ -12,7 +12,7 @@ const LearnSection = () => {
         <SectionTittle tittle={"To help Learn English"} />
       </div>
 
-      <div className="wrapper flex flex-col items-center justify-center gap-8  xl:w-[50%] md:w-[80%] mx-auto pt-10 lg:flex-row md:flex-row pb-10">
+      <div className="wrapper flex flex-col items-center justify-center gap-12  xl:w-[50%] md:w-[80%] mx-auto pt-10 lg:flex-row md:flex-row pb-10">
         <Card
           image={"/assets/img/temp.svg"}
           title={"Kodezi Code: Free Web IDE"}

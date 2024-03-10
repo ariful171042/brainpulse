@@ -3,6 +3,7 @@ import { Titillium_Web } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import { Toaster } from "react-hot-toast";
 
 const titilliumWeb = Titillium_Web({
   weight: ["200", "300", "400", "600", "700", "900"],
@@ -25,6 +26,7 @@ export default function RootLayout({
         <Header />
         <main className="min-h-screen">{children}</main>
         <Footer />
+        <Toaster position="bottom-right" reverseOrder={false} />;
       </body>
     </html>
   );
