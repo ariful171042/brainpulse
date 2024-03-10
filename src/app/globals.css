@@ -23,3 +23,11 @@ body {
 .nav-link:hover::after {
   @apply w-[100%];
 }
+
+.f-link {
+  @apply duration-200;
+}
+
+.f-link:hover {
+  @apply text-white;
+}

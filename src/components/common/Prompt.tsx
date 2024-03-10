@@ -1,13 +1,10 @@
-import Image from "next/image";
-import React from "react";
 import Button from "./Button";
 import GradientTitle from "./GradientTitle";
-import DifferentTitle from "./DifferentTitle";
 
 const Prompt = () => {
   return (
     <div className="wrapper bg-promt w-full h-full object-fill rounded-xl py-24 bg-repeat bg-cover bg-w-full">
-      <div className="flex flex-col gap-3 justify-center items-center">
+      <div className="flex flex-col gap-6 justify-center items-center">
         <div>
           <GradientTitle title="Get Ready To Gain Knowledge" />
         </div>
