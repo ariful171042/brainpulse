@@ -10,16 +10,44 @@ import { FaTwitter } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 import { FaYoutube } from "react-icons/fa";
 import { FaInstagramSquare } from "react-icons/fa";
+import emailjs from "@emailjs/browser";
+import toast, { Toaster } from "react-hot-toast";
 
 const Contact = () => {
   const [email, setEmail] = useState("");
+  const [name, setName] = useState("");
   const [message, setMessage] = useState("");
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    setEmail("");
-    setMessage("");
-    console.log("");
+
+    // env
+    const templateId = "template_wfvg3ze";
+    const serviceId = "service_mi02xbb";
+    const publicKey = "B7ZbiG-5itYXTy4df";
+
+    const templateParams = {
+      from_name: name,
+      from_email: email,
+      message: message,
+      to_name: "Sami Khan",
+    };
+
+    emailjs
+      .send(serviceId, templateId, templateParams, publicKey)
+      .then((response) => {
+        console.log(response);
+
+        setEmail("");
+        setMessage("");
+        setName("");
+
+        toast.success("Message set successfully");
+      })
+      .catch((error) => {
+        console.log(error);
+        toast.error("Message set failed");
+      });
   };
 
   return (
@@ -86,8 +114,8 @@ const Contact = () => {
             </span>
           </div>
         </div>
-        <div className=" md:bg-gray-700/60 p-5 md:w-[60%] rounded-2xl flex flex-col items-center gap-12 ">
-          <div className="flex flex-col gap-2 justify-center items-center md:pt-28">
+        <div className=" md:bg-gray-700/60 p-5 md:w-[60%] rounded-2xl flex flex-col  items-center gap-12 ">
+          <div className="flex flex-col gap-2 justify-center items-center md:pt-14">
             <h1 className="text-3xl text-center">
               Shere your experience with Us
             </h1>
@@ -97,6 +125,21 @@ const Contact = () => {
           </div>
           <div className="">
             <form onSubmit={handleSubmit} className=" flex flex-col gap-10">
+              <div className="flex gap-11">
+                <label htmlFor="email" className="">
+                  Name
+                </label>
+                <input
+                  type="name"
+                  id="name"
+                  value={name}
+                  onChange={(e) => setName(e.target.value)}
+                  className="w-[15rem] md:w-[20rem] bg-transparent outline-none border-b border-gray-500/50"
+                  placeholder="Enter your name"
+                  required
+                />
+              </div>
+
               <div className="flex gap-11">
                 <label htmlFor="email" className="">
                   Email

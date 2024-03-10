@@ -25,8 +25,8 @@ const Card = ({ image, title, description, height, width }: cardProp) => {
     //     </div>
     //   </div>
     // </div>
-    <div className="bg-gradient-to-r from-slate-600 to-slate-500 rounded-3xl">
-      <div className="flex flex-col gap-20 p-10 rounded-[calc(1.5rem-1px)] items-center bg-gradient-to-r from-slate-900/80 to-slate-800/80">
+    <div className="bg-gradient-to-r from-slate-600 to-slate-500 rounded-2xl shadow-[0px_0px_200px_rgba(0,0,0,0.50)] hover:shadow-[4px_8px_40px_rgba(0,0,1,1.1)] duration-300">
+      <div className="flex flex-col gap-20 p-10 rounded-[calc(.8rem-1px)] items-center bg-gradient-to-r from-slate-900/80 to-slate-800/80">
         <Image
           src={image || "/assets/img/temp.svg"}
           height={height}
