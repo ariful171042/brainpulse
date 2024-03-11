@@ -1,46 +1,51 @@
-"use client";
+'use client'
 import Button from "@/components/common/Button";
 import Image from "next/image";
 import React, { useState } from "react";
 
-const data = [
+interface Question {
+  id: number;
+  question: string;
+  ans: string;
+  rightAns: string[];
+}
+
+const data: Question[] = [
   {
     id: 1,
     question: "what is present tense",
     ans: "I am going to cox",
-    rightAns: {
-      a: "I am going to cox",
-      b: "I had went to cox",
-      c: "I will going to cox",
-      d: "I have going to cox",
-    },
+    rightAns: [
+      "I am going to cox",
+      "I had went to cox",
+      "I will going to cox",
+      "I have going to cox",
+    ],
   },
   {
     id: 2,
     question: "what is the past tense",
     ans: "I had going to cox",
-    rightAns: {
-      a: "I had going to cox",
-      b: "I had going to cox",
-      c: "I will going to Dhaka",
-      d: "I have a Car",
-    },
+    rightAns: [
+      "I had going to cox",
+      "I had going to cox",
+      "I will going to Dhaka",
+      "I have a Car",
+    ],
   },
 ];
 
-const TenseCheck = () => {
-  const [currentIndex, setCurrentIndex] = useState(0);
-  const [backgrounds, setBackgrounds] = useState(
-    Array(Object.keys(data[0].rightAns).length).fill("bg-pr/40")
+const TenseCheck: React.FC = () => {
+  const [currentIndex, setCurrentIndex] = useState<number>(0);
+  const [backgrounds, setBackgrounds] = useState<string[]>(
+    Array(data[0].rightAns.length).fill("bg-pr/40")
   );
 
   const handleNext = () => {
     if (currentIndex < data.length - 1) {
       const nextIndex = currentIndex + 1;
       setCurrentIndex(nextIndex);
-      setBackgrounds(
-        Array(Object.keys(data[nextIndex].rightAns).length).fill("bg-pr/40")
-      );
+      setBackgrounds(Array(data[nextIndex].rightAns.length).fill("bg-pr/40"));
     }
   };
 
@@ -48,9 +53,7 @@ const TenseCheck = () => {
     if (currentIndex > 0) {
       const prevIndex = currentIndex - 1;
       setCurrentIndex(prevIndex);
-      setBackgrounds(
-        Array(Object.keys(data[prevIndex].rightAns).length).fill("bg-pr/40")
-      );
+      setBackgrounds(Array(data[prevIndex].rightAns.length).fill("bg-pr/40"));
     }
   };
 
