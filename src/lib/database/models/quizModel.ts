@@ -1,6 +1,6 @@
 import { Document, Schema, model, models } from "mongoose";
 
-export interface IQuize extends Document {
+export interface IQuiz extends Document {
   question: string;
   ans: string;
   options: string[];

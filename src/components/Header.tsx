@@ -2,6 +2,8 @@ import Link from "next/link";
 import React from "react";
 import Button, { buttonVariants } from "./common/Button";
 import { cn } from "@/lib/utils";
+import NavItems from "./common/NavItems";
+import ModileNav from "./common/ModileNav";
 
 const Header = () => {
   return (
@@ -10,22 +12,17 @@ const Header = () => {
         <Link href="/">
           <p className="text-white text-2xl">Logo</p>
         </Link>
-        <div className="flex lg:gap-20 md:gap-10 gap-5 font-medium tracking-widest lg:text-lg">
-          <Link href="/" className="nav-link">
-            Home
-          </Link>
-          <Link href="/quiz" className="nav-link">
-            Quiz
-          </Link>
-          <Link href="/contact" className="nav-link">
-            Contact
-          </Link>
-          <Link href="/profile" className="nav-link">
-            Profile
-          </Link>
+        <div className="md:flex hidden text-lg">
+          <NavItems />
         </div>
-        <div>
-          <button className={cn(buttonVariants())}>Login</button>
+
+        <div className="flex justify-center items-center gap-4">
+          <div className="md:hidden">
+            <ModileNav />
+          </div>
+          {/* <div>
+            <button className={cn(buttonVariants())}>Login</button>
+          </div> */}
         </div>
       </div>
     </header>

@@ -4,8 +4,6 @@ import { connectToDatabase } from "@/lib/database";
 import Quiz from "@/lib/database/models/quizModel";
 import { handleError } from "@/lib/utils";
 
-
-
 type IQuiz = {
   question: string;
   ans: string;
