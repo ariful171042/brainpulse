@@ -115,7 +115,7 @@ const Privacy = () => {
           <p>
             Third-party ad servers or networks may use cookies, JavaScript, or
             Web Beacons in their advertisements and links on Brainplus, which
-            are sent directly to users' browsers. These technologies are used to
+            are sent directly to users browsers. These technologies are used to
             measure the effectiveness of their advertising campaigns and to
             personalize the advertising content you see on various websites.
             Brainplus does not have access to or control over these cookies used
@@ -128,14 +128,14 @@ const Privacy = () => {
             Third-Party Privacy Policies
           </h2>
           <p>
-            Brainplus's Privacy Policy does not apply to other advertisers or
+            Brainpluss Privacy Policy does not apply to other advertisers or
             websites. We advise you to consult the respective Privacy Policies
             of these third-party ad servers for more detailed information,
             including their practices and instructions on how to opt-out of
             certain options. You can choose to disable cookies through your
             individual browser settings. For more detailed information about
             cookie management with specific web browsers, please refer to the
-            respective browser's website.
+            respective browsers website.
           </p>
         </div>
 

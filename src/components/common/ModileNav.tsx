@@ -20,7 +20,7 @@ const MobileNav = () => {
           <div className="w-3/5 flex flex-col gap-5 bg-black/80 p-4 modal-content">
             <div>LOGO</div>
             <div className="border-b border-gray-500"></div>
-            <div className="w-14">
+            <div className="w-full ">
               <NavItems />
             </div>
           </div>

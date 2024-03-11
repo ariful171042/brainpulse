@@ -19,7 +19,7 @@ export const quizSchema = new Schema(
       required: true,
     },
 
-    options: [{ type: String, required: true }],
+    options: [{ type: String }],
 
     category: {
       type: String,

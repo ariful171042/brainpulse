@@ -28,7 +28,7 @@ const Terms = () => {
           <h2 className="text-2xl font-bold md:text-3xl">2. Use License</h2>
           <p>
             Permission is granted to temporarily download one copy of the
-            materials on BrainPlus's Website for personal, non-commercial
+            materials on BrainPluss Website for personal, non-commercial
             transitory viewing only. This is the grant of a license, not a
             transfer of title, and under this license you may not:
           </p>
@@ -39,15 +39,15 @@ const Terms = () => {
               display;
             </li>
             <li>
-              Attempt to reverse engineer any software contained on BrainPlus's
+              Attempt to reverse engineer any software contained on BrainPluss
               Website;
             </li>
             <li>
               Remove any copyright or other proprietary notations from the
-              materials; or
+              materials or
             </li>
             <li>
-              Transfer the materials to another person or "mirror" the materials
+              Transfer the materials to another person or mirror the materials
               on any other server.
             </li>
           </ul>
@@ -56,7 +56,7 @@ const Terms = () => {
         <div className="flex flex-col gap-4">
           <h2 className="text-2xl font-bold md:text-3xl">3. Disclaimer</h2>
           <p>
-            All the materials on BrainPlus's Website are provided "as is".
+            All the materials on BrainPluss Website are provided as is.
             BrainPlus makes no warranties, may it be expressed or implied,
             therefore negates all other warranties. Furthermore, BrainPlus does
             not make any representations concerning the accuracy or reliability
@@ -70,7 +70,7 @@ const Terms = () => {
           <p>
             BrainPlus or its suppliers will not be held accountable for any
             damages that will arise with the use or inability to use the
-            materials on BrainPlus's Website, even if BrainPlus or an authorized
+            materials on BrainPluss Website, even if BrainPlus or an authorized
             representative of this Website has been notified, orally or written,
             of the possibility of such damage. Some jurisdictions do not allow
             limitations on implied warranties or limitations of liability for
@@ -83,12 +83,12 @@ const Terms = () => {
             5. Revisions and Errata
           </h2>
           <p>
-            The materials appearing on BrainPlus's Website may include
-            technical, typographical, or photographic errors. BrainPlus does not
-            promise that any of the materials on this Website are accurate,
-            complete, or current. BrainPlus may change the materials contained
-            on its Website at any time without notice. BrainPlus does not make
-            any commitment to update the materials.
+            The materials appearing on BrainPluss Website may include technical,
+            typographical, or photographic errors. BrainPlus does not promise
+            that any of the materials on this Website are accurate, complete, or
+            current. BrainPlus may change the materials contained on its Website
+            at any time without notice. BrainPlus does not make any commitment
+            to update the materials.
           </p>
         </div>
 
@@ -98,7 +98,7 @@ const Terms = () => {
             BrainPlus has not reviewed all of the sites linked to its Website
             and is not responsible for the contents of any such linked site. The
             presence of any link does not imply endorsement by BrainPlus of the
-            site. The use of any linked website is at the user’s own risk.
+            site. The use of any linked website is at the users own risk.
           </p>
         </div>
 
@@ -110,7 +110,7 @@ const Terms = () => {
             BrainPlus has not reviewed all of the sites linked to its Website
             and is not responsible for the contents of any such linked site. The
             presence of any link does not imply endorsement by BrainPlus of the
-            site. The use of any linked website is at the user’s own risk.
+            site. The use of any linked website is at the users own risk.
           </p>
         </div>
 
@@ -122,7 +122,7 @@ const Terms = () => {
         <div className="flex flex-col gap-4">
           <h2 className="text-2xl font-bold md:text-3xl">9. Governing Law</h2>
           <p>
-            Any claim related to BrainPlus's Website shall be governed by the
+            Any claim related to BrainPluss Website shall be governed by the
             laws of Peater Griffin without regards to its conflict of law
             provisions.
           </p>
