@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import React from "react";
 
 const headerLinks = [
@@ -23,20 +24,19 @@ const headerLinks = [
 ];
 
 const NavItems = () => {
+  const navActive = usePathname();
+
   return (
     <div className="flex flex-col md:flex-row md:gap-10 gap-3 ">
-      <Link href="/" className="nav-link">
-        Home
-      </Link>
-      <Link href="/quiz" className="nav-link">
-        Quiz
-      </Link>
-      <Link href="/contact" className="nav-link">
-        Contact
-      </Link>
-      <Link href="/profile" className="nav-link">
-        Profile
-      </Link>
+      {headerLinks.map((link) => (
+        <Link
+          href={link.path}
+          key={link.name}
+          className={`${navActive === link.path ? "text-violet-300" : ""} `}
+        >
+          {link.name}
+        </Link>
+      ))}
     </div>
   );
 };

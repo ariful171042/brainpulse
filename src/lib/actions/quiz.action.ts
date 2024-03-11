@@ -27,3 +27,16 @@ export const createQuiz = async (quiz: IQuiz) => {
     handleError(error);
   }
 };
+
+export const getAllQuests = async () => {
+  try {
+    await connectToDatabase();
+
+    const quizs = await Quiz.find();
+    if (!quizs) handleError("Quiz not found");
+
+    return JSON.parse(JSON.stringify(quizs));
+  } catch (error) {
+    handleError(error);
+  }
+};

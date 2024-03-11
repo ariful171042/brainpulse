@@ -1,6 +1,6 @@
 import Button from "@/components/common/Button";
 import { createQuiz } from "@/lib/actions/quiz.action";
-import { IQuize } from "@/lib/database/models/quizModel";
+// import { IQuize } from "@/lib/database/models/quizModel";
 import { log } from "console";
 import React, { useState } from "react";
 
@@ -56,7 +56,8 @@ const AddModal: React.FC = () => {
             <div className=" flex gap-5 items-center">
               <label
                 htmlFor="question"
-                className="text-xl font-semibold tracking-wider text-white/80">
+                className="text-xl font-semibold tracking-wider text-white/80"
+              >
                 Question
               </label>
               <input
@@ -72,7 +73,8 @@ const AddModal: React.FC = () => {
             <div className=" flex gap-5 items-center">
               <label
                 htmlFor="ans"
-                className="text-xl font-semibold tracking-wider text-white/80">
+                className="text-xl font-semibold tracking-wider text-white/80"
+              >
                 Ans
               </label>
               <input
@@ -88,7 +90,8 @@ const AddModal: React.FC = () => {
             <div className=" flex gap-5 items-center">
               <label
                 htmlFor="category"
-                className="text-xl font-semibold tracking-wider text-white/80">
+                className="text-xl font-semibold tracking-wider text-white/80"
+              >
                 Category
               </label>
               <select
@@ -96,14 +99,16 @@ const AddModal: React.FC = () => {
                 id="category"
                 className="w-full bg-transparent outline-none border-b border-vaiolet  py-2 px-5 text-white text-xl"
                 value={category}
-                onChange={(e) => setCategory(e.target.value)}>
+                onChange={(e) => setCategory(e.target.value)}
+              >
                 <option value="tense">Tense</option>
               </select>
             </div>
             <div className=" flex flex-col gap-1">
               <label
                 htmlFor="options"
-                className="text-xl pb-2 font-semibold tracking-wider text-white/80">
+                className="text-xl pb-2 font-semibold tracking-wider text-white/80"
+              >
                 Options
               </label>
               <hr className="" />
