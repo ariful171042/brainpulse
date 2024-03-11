@@ -1,15 +1,8 @@
 "use server";
 
 import { connectToDatabase } from "@/lib/database";
-import Quiz from "@/lib/database/models/quizModel";
+import Quiz, { IQuiz } from "@/lib/database/models/quizModel";
 import { handleError } from "@/lib/utils";
-
-type IQuiz = {
-  question: string;
-  ans: string;
-  options: string[];
-  category: string;
-};
 
 export const createQuiz = async (quiz: IQuiz) => {
   try {
