@@ -96,6 +96,7 @@ const Contact = () => {
               </div>
             </div>
           </div>
+
           <div className="flex gap-4 mt-8 md:mt-0">
             <span>
               <FaFacebook />
@@ -114,6 +115,7 @@ const Contact = () => {
             </span>
           </div>
         </div>
+
         <div className=" md:bg-gray-700/60 p-5 md:w-[60%] rounded-2xl flex flex-col  items-center gap-12 ">
           <div className="flex flex-col gap-2 justify-center items-center md:pt-14">
             <h1 className="text-3xl text-center">

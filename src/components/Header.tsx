@@ -16,7 +16,15 @@ const Header = () => {
           <NavItems />
         </div>
 
-        <div>
+        <div className="flex gap-4">
+          <SignedOut>
+            <div className="z-[1]">
+              <Button variant="primary">
+                <Link href="/sign-in">Login</Link>
+              </Button>
+            </div>
+          </SignedOut>
+
           <div className="flex justify-center items-center gap-4">
             <div className="md:hidden">
               <ModileNav />
@@ -25,12 +33,6 @@ const Header = () => {
               <UserButton />
             </div>
           </div>
-
-          <SignedOut>
-            <Button variant="primary">
-              <Link href="/sign-in">Login</Link>
-            </Button>
-          </SignedOut>
         </div>
       </div>
     </header>
