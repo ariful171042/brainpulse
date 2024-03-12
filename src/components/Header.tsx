@@ -13,22 +13,18 @@ const Header = () => {
         </Link>
 
         <div className="md:flex hidden items-center text-lg">
-          <SignedIn>
-            <NavItems />
-          </SignedIn>
+          <NavItems />
         </div>
 
         <div>
-          <SignedIn>
-            <div className="flex justify-center items-center gap-4">
-              <div className="md:hidden">
-                <ModileNav />
-              </div>
-              <div className="hidden md:block">
-                <UserButton />
-              </div>
+          <div className="flex justify-center items-center gap-4">
+            <div className="md:hidden">
+              <ModileNav />
             </div>
-          </SignedIn>
+            <div className="hidden md:block">
+              <UserButton />
+            </div>
+          </div>
 
           <SignedOut>
             <Button variant="primary">
