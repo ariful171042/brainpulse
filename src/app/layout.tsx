@@ -4,6 +4,7 @@ import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { Toaster } from "react-hot-toast";
+import { ClerkProvider } from "@clerk/nextjs";
 
 const titilliumWeb = Titillium_Web({
   weight: ["200", "300", "400", "600", "700", "900"],
@@ -21,13 +22,15 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className={`${titilliumWeb.className} bg-pr`}>
-        <Header />
-        <main className="min-h-screen">{children}</main>
-        <Footer />
-        <Toaster position="bottom-right" reverseOrder={false} />;
-      </body>
-    </html>
+    <ClerkProvider>
+      <html lang="en">
+        <body className={`${titilliumWeb.className} bg-pr`}>
+          <Header />
+          <main className="min-h-screen">{children}</main>
+          <Footer />
+          <Toaster position="bottom-right" reverseOrder={false} />;
+        </body>
+      </html>
+    </ClerkProvider>
   );
 }

@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@clerk/nextjs": "^4.29.9",
     "@emailjs/browser": "^4.3.3",
     "addinputs": "^1.0.0",
     "class-variance-authority": "^0.7.0",
