@@ -32,7 +32,9 @@ const NavItems = () => {
         <Link
           href={link.path}
           key={link.name}
-          className={`${navActive === link.path ? "text-violet-300" : ""} `}
+          className={`${
+            navActive === link.path ? "text-violet-300" : ""
+          } nav-link`}
         >
           {link.name}
         </Link>

@@ -14,36 +14,26 @@ interface Question {
 
 // const data: Question[] = [
 //   {
-//     _id: "1",
+//     id: 1,
 //     question: "what is present tense",
 //     ans: "I am going to cox",
-//     options: [
+//     rightAns: [
 //       "I am going to cox",
 //       "I had went to cox",
 //       "I will going to cox",
 //       "I have going to cox",
 //     ],
-//     category: "Category",
 //   },
 //   {
-//     _id: "2",
+//     id: 2,
 //     question: "what is the past tense",
 //     ans: "I had going to cox",
-//     options: [
+//     rightAns: [
 //       "I had going to cox",
 //       "I had going to cox",
 //       "I will going to Dhaka",
 //       "I have a Car",
 //     ],
-//     category: "Category",
-//   },
-
-//   {
-//     _id: "65edfadb9c3cb8c0a95ddd72",
-//     question: "Question",
-//     ans: "ans",
-//     options: ["dfas", "dsfa", "dfsa", "adsf"],
-//     category: "Category",
 //   },
 // ];
 
@@ -122,7 +112,8 @@ const TenseCheck: React.FC = () => {
                             onClick={() =>
                               checkAns(data[currentIndex].ans, value, index)
                             }
-                            className={`border ${backgrounds[index]} border-se rounded-lg py-5 px-5 flex gap-3 items-center`}>
+                            className={`border ${backgrounds[index]} border-se rounded-lg py-5 px-5 flex gap-3 items-center`}
+                          >
                             <div className="w-[15px] h-[12px] border"></div>
                             <h3 className="text-xl text-white/80">{value}</h3>
                           </div>

@@ -40,3 +40,19 @@ export const getAllQuests = async () => {
     handleError(error);
   }
 };
+
+export const deleteQuiz = async (id: string) => {
+  try {
+    await connectToDatabase();
+
+    const quize = await Quiz.findByIdAndDelete({ id });
+
+    if (!quize) {
+      handleError("Quiz not found");
+    }
+
+    return JSON.parse(JSON.stringify(quize));
+  } catch (error) {
+    handleError(error);
+  }
+};
