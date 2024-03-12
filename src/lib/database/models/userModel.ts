@@ -12,7 +12,7 @@ export const UserSchema = new Schema(
       required: true,
       unique: true,
     },
-    userName: {
+    username: {
       type: String,
       required: true,
       unique: true,
@@ -26,6 +26,10 @@ export const UserSchema = new Schema(
       required: true,
     },
     photo: {
+      type: String,
+      required: true,
+    },
+    role: {
       type: String,
       required: true,
     },
