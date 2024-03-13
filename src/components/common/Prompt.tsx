@@ -1,5 +1,7 @@
+import { SignedIn, SignedOut } from "@clerk/nextjs";
 import Button from "./Button";
 import GradientTitle from "./GradientTitle";
+import Link from "next/link";
 
 const Prompt = () => {
   return (
@@ -9,7 +11,16 @@ const Prompt = () => {
           <GradientTitle title="Get Ready To Gain Knowledge" />
         </div>
         <div>
-          <Button variant={"primary"}>SignUp</Button>
+          <SignedIn>
+            <Button variant={"primary"}>
+              <Link href="/quiz">Get Started</Link>
+            </Button>
+          </SignedIn>
+          <SignedOut>
+            <Button variant={"primary"}>
+              <Link href="/sign-in">SignUp</Link>
+            </Button>
+          </SignedOut>
         </div>
       </div>
     </div>
