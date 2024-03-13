@@ -1,5 +1,6 @@
 import Button from "@/components/common/Button";
 import SectionTittle from "@/components/common/SectionTittle";
+import Link from "next/link";
 import React from "react";
 
 const HeroSection = () => {
@@ -12,7 +13,9 @@ const HeroSection = () => {
               <SectionTittle tittle="Ensure Correct Verb" />
               <SectionTittle tittle="Usage with Our Tense Checker" />
               <div className="pt-3">
-                <Button variant={"primary"}>Get Start</Button>
+                <Button variant={"primary"}>
+                  <Link href="/quiz">Get Start</Link>
+                </Button>
               </div>
             </div>
           </div>

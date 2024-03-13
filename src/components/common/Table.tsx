@@ -12,7 +12,7 @@ const userData = [
 const RankTable = () => {
   return (
     <div className="w-full flex justify-center ">
-      <div className="container shadow-[7px_7px_20px_0px_rgba(0,0,01)]">
+      <div className="container shadow-[7px_7px_10px_1px_rgba(0,0,25)]">
         <table className="min-w-full divide-y divide-pr  overflow-hidden">
           <thead className="text-xs md:text-xl bg-gray-700/20 text-white/80 font-semibold uppercase tracking-wider text-center">
             <tr>
