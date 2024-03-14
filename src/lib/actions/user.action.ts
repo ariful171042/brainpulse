@@ -27,6 +27,8 @@ export const createUser = async (user: userParams) => {
 
     const newUser = await User.create(user);
 
+    console.log(newUser);
+
     if (!newUser) {
       return handleError("Error creating user");
     }
