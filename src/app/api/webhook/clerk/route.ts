@@ -70,6 +70,8 @@ export async function POST(req: Request) {
       role: "user",
     };
 
+    console.log(user);
+
     const newUser = await createUser(user);
 
     if (newUser) {
