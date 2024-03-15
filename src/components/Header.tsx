@@ -3,6 +3,7 @@ import Link from "next/link";
 import ModileNav from "./common/ModileNav";
 import NavItems from "./common/NavItems";
 import Button from "./common/Button";
+import { RiProfileFill } from "react-icons/ri";
 
 const Header = () => {
   return (
@@ -29,8 +30,13 @@ const Header = () => {
             <div className="md:hidden">
               <ModileNav />
             </div>
-            <div className="hidden md:block">
-              <UserButton />
+            <div className="hidden md:block text-2xl text-gray-200">
+              <Link href="/profile" className="flex items-center gap-4">
+                <SignedIn>
+                  <RiProfileFill />
+                </SignedIn>
+                <UserButton />
+              </Link>
             </div>
           </div>
         </div>
