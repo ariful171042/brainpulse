@@ -8,10 +8,10 @@ export default authMiddleware({
     "/privacy",
     "/contact",
     "/quiz",
-    "/api/webhooks(.*)",
+    "/api/webhooks/clerk",
   ],
 
-  ignoredRoutes: ["/api/webhooks(.*)"],
+  ignoredRoutes: ["/api/webhooks/clerk"],
 });
 
 export const config = {
