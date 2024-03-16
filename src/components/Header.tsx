@@ -3,7 +3,7 @@ import Link from "next/link";
 import ModileNav from "./common/ModileNav";
 import NavItems from "./common/NavItems";
 import Button from "./common/Button";
-import { RiProfileFill } from "react-icons/ri";
+import { ImProfile } from "react-icons/im";
 
 const Header = () => {
   return (
@@ -33,7 +33,7 @@ const Header = () => {
             <div className="hidden md:block text-2xl text-gray-200">
               <Link href="/profile" className="flex items-center gap-4">
                 <SignedIn>
-                  <RiProfileFill />
+                  <ImProfile />
                 </SignedIn>
                 <UserButton />
               </Link>
