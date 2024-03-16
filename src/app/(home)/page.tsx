@@ -1,17 +1,11 @@
-import Button, { buttonVariants } from "@/components/common/Button";
-import SectionTittle from "@/components/common/SectionTittle";
-
-import React from "react";
-import HeroSection from "./_components/HeroSection";
-import Card from "@/components/common/Card";
-import SubTitle from "@/components/common/SubTitle";
-import LearnSection from "./_components/LearnSection";
-import { cn } from "@/lib/utils";
 import DifferentTitle from "@/components/common/DifferentTitle";
-import RankTable from "@/components/common/Table";
 import Prompt from "@/components/common/Prompt";
+import SubTitle from "@/components/common/SubTitle";
+import RankTable from "@/components/common/Table";
 import BgTopDown from "@/components/ui/BgTopDown";
 import Image from "next/image";
+import HeroSection from "./_components/HeroSection";
+import LearnSection from "./_components/LearnSection";
 
 const HomePage = () => {
   return (
