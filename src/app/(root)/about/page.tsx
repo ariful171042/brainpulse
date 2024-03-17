@@ -25,7 +25,7 @@ const About = () => {
       <section>
         <div className="flex flex-col items-center gap-6  duration-300 text-center">
           <h2 className="text-xl font-semibold md:text-3xl">
-            Ready to Start Quizzing? Let's Dive In!
+            Ready to Start Quizzing? Lets Dive In!
           </h2>
           <p className="text-sm md:text-lg">
             Embark on a journey of discovery and knowledge. Start quizzing now
@@ -33,7 +33,7 @@ const About = () => {
           </p>
           <div>
             <Button variant="secondary">
-              <Link href="/quiz">LET'S START</Link>
+              <Link href="/quiz">LETS START</Link>
             </Button>
           </div>
         </div>
